@@ -1,0 +1,79 @@
+=== The result fromm ILS ===
+Total cost of all routes: $323350.86
+All routes: [[0, 1, 8, 5, 3, 10, 4, 7, 2, 9, 6, 0]]
+
+Route 1: [0, 1, 8, 5, 3, 10, 4, 7, 2, 9, 6, 0]
+  - Distance: 70.26 km
+  - Cost: $323350.86
+
+Cost: [323350.8619570406]
+Warning: linear constraint 0 and linear constraint 1 have the same name "produce_dual"
+=== MASTER PROBLEM IS SUCCESSFUL ===
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows 11.0 (22631.2))
+
+CPU model: Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 10 rows, 1 columns and 10 nonzeros
+Model fingerprint: 0x85bfb724
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e+05, 3e+05]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 10 rows and 1 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.2335086e+05   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  3.233508620e+05
+
+The duals are: [323350.8619570406, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+1.------------------------------------------------------------------------Duals applying would be[323350.8619570406, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+2.------------------------------------------------------------------------Add route from <class 'all_model.Sub_problem_SP4'>: [[0, 7, 9, 3, 5, 8, 1, 10, 4, 2, 6, 0]], cost [303085.82622425864]
+3.------------------------------------------------------------------------Objective value from Sub_problem:<all_model.Sub_problem_SP4 object at 0x000001C5D0D19E10> -20265.035732781893
+Warning: linear constraint 0 and linear constraint 1 have the same name "produce_dual"
+Warning: model has pending changes.
+Derived model does not contain these changes.
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows 11.0 (22631.2))
+
+CPU model: Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 10 rows, 1 columns and 10 nonzeros
+Model fingerprint: 0x06a6014c
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e+05, 3e+05]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 10 rows and 1 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.0308583e+05   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  3.030858262e+05
+4.------------------------------------------------------------------------Duals for <class 'all_model.Sub_problem_SP4'> is [303085.82622425864, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+5.------------------------------------------------------------------------  Best cost from Master problem: 303085.82622425864
+6.------------------------------------------------------------------------  Routes from Master problem: [[[0, 7, 9, 3, 5, 8, 1, 10, 4, 2, 6, 0]]]
+8.------------------------------------------------------------------------   Final columns added: 1
+1.------------------------------------------------------------------------Duals applying would be[303085.82622425864, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+2.------------------------------------------------------------------------Add route from <class 'all_model.Sub_problem_SP3'>: [[0, 9, 7, 3, 5, 0], [0, 2, 6, 4, 10, 8, 1, 0]], cost [280499.6004966012, 177215.35888826282]
+3.------------------------------------------------------------------------Objective value from Sub_problem:<all_model.Sub_problem_SP3 object at 0x000001C5D49B9950> 154629.1331606054
+7.------------------------------------------------------------------------The column of <all_model.Sub_problem_SP3 object at 0x000001C5D49B9950> has the reduced cost 154629.1331606054 > 0.0, which is non - negative
+8.------------------------------------------------------------------------   Final columns added: 2
+1.------------------------------------------------------------------------Duals applying would be[303085.82622425864, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+2.------------------------------------------------------------------------Add route from <class 'all_model.Sub_problem_SP2'>: [[0, 5, 3, 9, 7, 0]], cost [560999.2009932024]
+3.------------------------------------------------------------------------Objective value from Sub_problem:<all_model.Sub_problem_SP2 object at 0x000001C5D494DB10> 257913.37476894376
+7.------------------------------------------------------------------------The column of <all_model.Sub_problem_SP2 object at 0x000001C5D494DB10> has the reduced cost 257913.37476894376 > 0.0, which is non - negative
+8.------------------------------------------------------------------------   Final columns added: 3
+1.------------------------------------------------------------------------Duals applying would be[303085.82622425864, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+2.------------------------------------------------------------------------Add route from <class 'all_model.Sub_problem_SP1'>: [[0, 2, 6, 4, 10, 8, 1, 0]], cost [354430.71777652565]
+3.------------------------------------------------------------------------Objective value from Sub_problem:<all_model.Sub_problem_SP1 object at 0x000001C5D1D3FC50> 51344.891552266956
+7.------------------------------------------------------------------------The column of <all_model.Sub_problem_SP1 object at 0x000001C5D1D3FC50> has the reduced cost 51344.891552266956 > 0.0, which is non - negative
+8.------------------------------------------------------------------------   Final columns added: 4
+RUN TIME:4.418778896331787 seg.
